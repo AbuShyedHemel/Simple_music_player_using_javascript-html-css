@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+</head>
+<body>
+   
+    <div id="bg">
+        <div id="blackLayer"></div>
+        <div id="particles-js"></div>
+    </div>
+   
+    <div id="main">
+        <div id="image">
+            <img src="image.jpg"/>
+        </div>
+        <div id="player">
+            <div id="songTitle"></div>
+            <div id="buttons">
+                <button id="pre" onclick="pre()"><img src="Pre.png" height="90%" width="90%"/></button>
+                <button id="play" onclick="playOrPauseSong()"><img src="Pause.png"/></button>
+                <button id="next" onclick="next()"><img src="Next.png" height="90%" width="90%"/></button>
+            </div>
+            
+            <div id="seek-bar">
+                <div id="fill"></div>
+                <div id="handle"></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="particles.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
